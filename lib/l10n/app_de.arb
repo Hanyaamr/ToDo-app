@@ -1,0 +1,19 @@
+{
+  "app_title": "Aufgabenliste",
+  "add_new_task": "Neue Aufgabe hinzufügen",
+  "please_enter_task_title": "Bitte geben Sie den Aufgabennamen ein !!",
+  "enter_task_title": "Aufgabenname eingeben",
+  "please_enter_task_description": "Bitte geben Sie die Aufgabenbeschreibung ein !!",
+  "enter_task_description": "Aufgabenbeschreibung eingeben",
+  "add_task": "Aufgabe hinzufügen",
+  "select_time": "Zeit auswählen",
+  "edit_task": "Aufgabe bearbeiten",
+  "task_details": "Aufgabendetails",
+  "settings": "Einstellungen",
+  "language": "Sprache",
+  "english": "Englisch",
+  "arabic": "Arabisch",
+  "german": "Deutsch",
+  "dark_mode": "Dunkler Modus",
+  "task_list": "Aufgabenliste"
+}

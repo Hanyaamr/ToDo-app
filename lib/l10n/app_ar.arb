@@ -1,0 +1,19 @@
+{
+  "app_title": "قائمة المهام",
+  "add_new_task": "إضافة مهمة جديدة",
+  "please_enter_task_title": "الرجاء إدخال عنوان المهمة !!",
+  "enter_task_title": "أدخل عنوان المهمة",
+  "please_enter_task_description": "الرجاء إدخال وصف المهمة !!",
+  "enter_task_description": "أدخل وصف المهمة",
+  "add_task": "أضف مهمة",
+  "select_time": "حدد الوقت",
+  "edit_task": "تحرير المهمة",
+  "task_details": "تفاصيل المهمة",
+  "settings": "الإعدادات",
+  "language": "اللغة",
+  "english": "الإنجليزية",
+  "arabic": "العربية",
+  "german": "الألمانية",
+  "dark_mode": "الوضع الليلي",
+  "task_list": "قائمة المهام"
+}

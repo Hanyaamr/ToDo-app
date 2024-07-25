@@ -19,7 +19,10 @@ selectedLabelStyle: TextStyle(color: AppColors.PrimaryColor),
 
     textTheme: TextTheme(
   //app title
-     titleLarge: GoogleFonts.poppins(fontSize:22,fontWeight: FontWeight.w700,color: AppColors.whiteColor)
+     titleLarge: GoogleFonts.poppins(fontSize:22,fontWeight: FontWeight.w700,color: AppColors.whiteColor),
+     bodyLarge: GoogleFonts.aBeeZee(fontSize:20,fontWeight: FontWeight.w500,color: AppColors.blackColor),
+     bodyMedium: GoogleFonts.aBeeZee(fontSize:15,fontWeight: FontWeight.w500,color: AppColors.blackColor),
+
 )
 );
 }

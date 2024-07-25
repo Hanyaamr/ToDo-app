@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:todo_code/app_theme/app_colors.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class BottomSheetTask extends StatelessWidget {
 var formKey=GlobalKey<FormState>();
@@ -15,31 +16,31 @@ var formKey=GlobalKey<FormState>();
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Text(
-              'Add new Task',
+              AppLocalizations.of(context)!.add_task,
               textAlign: TextAlign.center,
             ),
             TextFormField(
               validator: (text){
                 if(text==null || text.isEmpty){
-                  return 'Please Enter task title !!';
+                  return AppLocalizations.of(context)!.please_enter_task_title;
                 }return null;
 
               },
-              decoration: InputDecoration(hintText: 'Enter task title'),
+              decoration: InputDecoration(hintText: AppLocalizations.of(context)!.enter_task_title),
             ),
             Padding(
               padding: const EdgeInsets.only(top: 15,bottom: 20),
               child: TextFormField(
                 validator: (text){
                   if(text==null || text.isEmpty){
-                    return 'Please Enter task description !!';
+                    return AppLocalizations.of(context)!.please_enter_task_description;
                   }return null;
                 },
                 maxLines: 4,
-                decoration: InputDecoration(hintText: 'Enter task description'),
+                decoration: InputDecoration(hintText: AppLocalizations.of(context)!.enter_task_description),
               ),
             ),
-            Text('Select Time'),
+            Text(AppLocalizations.of(context)!.select_time),
             Text(
               '12:00 AM',
               textAlign: TextAlign.center,
@@ -49,7 +50,7 @@ var formKey=GlobalKey<FormState>();
                 style: ElevatedButton.styleFrom(backgroundColor: AppColors.PrimaryColor),
                 onPressed: (){
                   addTask();
-                }, child: Text('Add Task',style: TextStyle(color: Colors.white),))
+                }, child: Text(AppLocalizations.of(context)!.add_task,style: TextStyle(color: Colors.white),))
           ],
         ),
       ),

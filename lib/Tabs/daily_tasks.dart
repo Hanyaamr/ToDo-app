@@ -17,8 +17,9 @@ class _DailyTasksState extends State<DailyTasks> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.red,
       appBar: AppBar(
-        // toolbarHeight: MediaQuery.of(context).size.height*.155,
+        toolbarHeight: MediaQuery.of(context).size.height*.02,  //doing seperator
         backgroundColor: AppColors.PrimaryColor,),
       body: Column(
         children: [
@@ -26,8 +27,7 @@ class _DailyTasksState extends State<DailyTasks> {
             children: [
               Container(
                 padding: EdgeInsets.only(
-                    left: MediaQuery.of(context).size.width * .09),
-                alignment: AlignmentDirectional.topStart,
+                    left: MediaQuery.of(context).size.width * .15),
                 height: MediaQuery.of(context).size.height * .2,
                 width: MediaQuery.of(context).size.width,
                 color: AppColors.PrimaryColor,
@@ -37,9 +37,9 @@ class _DailyTasksState extends State<DailyTasks> {
                 ),
               ),
               Container(
-                padding: EdgeInsets.symmetric(vertical:  MediaQuery.of(context).size.height * .06),
+                padding: EdgeInsets.symmetric(vertical:MediaQuery.of(context).size.height * .06,horizontal: MediaQuery.of(context).size.width * .02),
                 // color: AppColors.greenColor,
-                child: EasyDateTimeLine(timeLineProps: EasyTimeLineProps(vPadding:4, ),
+                child: EasyDateTimeLine(timeLineProps: EasyTimeLineProps(vPadding:10,separatorPadding: 12),
                   initialDate: DateTime.now(),
                   dayProps: const EasyDayProps(
                     dayStructure: DayStructure.dayStrDayNum,
